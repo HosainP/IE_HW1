@@ -1,28 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: #E5E5E5;
 }
 
+.wrapper {
+  width: 100%;
+}
+
 .intro-box {
-  height: 539.1px;
-  width: 970px;
-  padding-left: 60px;
-  background-image: url("images/intro/intro-background.png");
+  float: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: white;
 }
 
 .intro-subj-box {
-  padding-top: 105.92px;
-  height: 134.4px;
-  width: 500px;
+  width: 70%;
+  padding: 30px 0px 20px 0px;
+  text-align: left;
 }
 
 #intro-subj-1 {
-  font-family: Inter;
-  font-style: bold;
-  font-size: 48px;
-  line-height: 59px;
-  line-height: 124%;
-  vertical-align: top;
+  font-family: "Inter";
+  font-style: normal;
   font-weight: 700;
+  font-size: 48px;
+  line-height: 123.6%;
   line-height: 59px;
   letter-spacing: 0em;
   text-align: left;
@@ -30,13 +42,11 @@ body {
 }
 
 #intro-subj-2 {
-  font-family: Inter;
-  font-style: bold;
-  font-size: 48px;
-  line-height: 59px;
-  line-height: 124%;
-  vertical-align: top;
+  font-family: "Inter";
+  font-style: normal;
   font-weight: 700;
+  font-size: 48px;
+  line-height: 123.6%;
   line-height: 59px;
   letter-spacing: 0em;
   text-align: left;
@@ -44,13 +54,11 @@ body {
 }
 
 #intro-subj-3 {
-  font-family: Inter;
-  font-style: bold;
-  font-size: 48px;
-  line-height: 59px;
-  line-height: 124%;
-  vertical-align: top;
+  font-family: "Inter";
+  font-style: normal;
   font-weight: 700;
+  font-size: 48px;
+  line-height: 123.6%;
   line-height: 59px;
   letter-spacing: 0em;
   text-align: left;
@@ -58,22 +66,36 @@ body {
 }
 
 #intro-desc {
-  height: 100.23px;
-  width: 424px;
-  font-family: Inter;
-  font-size: 16px;
+  font-family: "Inter";
+  font-style: normal;
   font-weight: 400;
+  font-size: 16px;
   line-height: 24px;
-  letter-spacing: 0em;
-  text-align: left;
-  vertical-align: top;
+  text-transform: capitalize;
+  font-feature-settings: "calt" off, "kern" off;
   color: #767676;
+  padding-bottom: 30px;
 }
 
 #intro-pic {
-  padding-right: 57.6px;
+  width: 30%;
   float: right;
-  padding-top: 15.11px;
+  display: none;
+}
+
+#intro-pic-2 {
+  display: block;
+  width: 30%;
+  float: right;
+}
+
+#intro-button {
+  float: left;
+}
+
+#intro-pic-2-div {
+  display: block;
+  float: right;
 }
 
 button {
@@ -85,7 +107,8 @@ button {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   border-radius: 5px;
   cursor: pointer;
   font-family: Inter;
@@ -97,4 +120,172 @@ button {
 #yellow-circle {
   margin-left: 40px;
   margin-top: 34.17;
+}
+
+@media only screen and (min-width: 768px) {
+  .intro-box {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .intro-subj-box {
+    width: 65%;
+    padding-top: 30px;
+    text-align: left;
+    float: left;
+  }
+  #intro-subj-1 {
+    font-size: 50px;
+  }
+  #intro-subj-2 {
+    font-size: 50px;
+  }
+  #intro-subj-3 {
+    font-size: 50px;
+  }
+  #intro-desc {
+    padding-top: 15px;
+    width: 65%;
+    font-size: 30px;
+    line-height: 34px;
+  }
+  #intro-pic {
+    height: auto;
+    width: 35%;
+    float: right;
+    display: block;
+  }
+  #intro-pic-div {
+    display: block;
+  }
+  #intro-pic-2 {
+    display: none;
+  }
+  #button-and-pic2 {
+    float: left;
+  }
+  #intro-pic-2-div {
+    float: right;
+    display: block;
+    height: auto;
+    width: 80%;
+    display: none;
+  }
+  #intro-button {
+    float: left;
+  }
+  button {
+    letter-spacing: 0em;
+  }
+  #yellow-circle {
+    margin-left: 40px;
+    margin-top: 34.17;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .intro-box {
+    background-image: url("images/intro/intro-background.png");
+    background-size: 100% 100%;
+  }
+  .intro-subj-box {
+    width: 65%;
+    padding: 100px 0px 20px 0px;
+    text-align: left;
+    float: left;
+  }
+  #intro-subj-1 {
+    font-family: Inter;
+    font-style: bold;
+    font-size: 55px;
+    vertical-align: top;
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #2B2B2B;
+  }
+  #intro-subj-2 {
+    font-family: Inter;
+    font-style: bold;
+    font-size: 55px;
+    vertical-align: top;
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFB400;
+  }
+  #intro-subj-3 {
+    font-family: Inter;
+    font-style: bold;
+    font-size: 55px;
+    vertical-align: top;
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #2B2B2B;
+  }
+  #intro-desc {
+    padding-top: 15px;
+    padding-bottom: 50px;
+    width: 65%;
+    font-family: Inter;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 0em;
+    text-align: left;
+    vertical-align: top;
+    color: #767676;
+    float: left;
+  }
+  #intro-pic {
+    height: auto;
+    width: 35%;
+    float: right;
+    display: block;
+  }
+  #intro-pic-div {
+    display: block;
+  }
+  #intro-pic-2 {
+    height: auto;
+    width: 35%;
+    float: right;
+    display: none;
+  }
+  #button-and-pic2 {
+    float: left;
+  }
+  #intro-pic-2-div {
+    float: right;
+    display: block;
+    height: auto;
+    width: 80%;
+    display: none;
+  }
+  #intro-button {
+    float: left;
+  }
+  button {
+    border: none;
+    color: black;
+    background-color: #FFB400;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Inter;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+  }
+  #yellow-circle {
+    margin-left: 40px;
+    margin-top: 34.17;
+  }
 }/*# sourceMappingURL=index.css.map */
