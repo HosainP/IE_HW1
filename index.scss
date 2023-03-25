@@ -1,10 +1,12 @@
+@import "variables";
+
 *{
     margin: 0;
     padding: 0;
 }
 
 body{
-    background-color: #E5E5E5;
+    background-color: $backgroundColor;
 }
 
 .wrapper{
@@ -46,7 +48,7 @@ body{
     letter-spacing: 0em;
     text-align: left;
 
-    color: #2B2B2B;
+    color: $myGrey;
 }
 
 #intro-subj-2{
@@ -60,7 +62,7 @@ body{
     letter-spacing: 0em;
     text-align: left;
 
-    color: #FFB400;
+    color: $myYellow;
 }
 
 #intro-subj-3{
@@ -74,7 +76,7 @@ body{
     letter-spacing: 0em;
     text-align: left;
 
-    color: #2B2B2B;
+    color: $myGrey;
 }
 
 #intro-desc{
@@ -85,7 +87,7 @@ body{
     line-height: 24px;
     text-transform: capitalize;
     font-feature-settings: 'calt' off, 'kern' off;
-    color: #767676;
+    color: $myLightGrey;
     padding-bottom: 30px;
 }
 
@@ -113,7 +115,7 @@ body{
 button {
     border: none;
     color: black;
-    background-color: #FFB400;
+    background-color: $myYellow;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -148,7 +150,7 @@ button {
 
     text-transform: capitalize;
 
-    color: #2B2B2B;
+    color: $myGrey;
 }
 
 .part-desc{
@@ -162,7 +164,7 @@ button {
     text-transform: capitalize;
     font-feature-settings: 'calt' off, 'kern' off;
 
-    color: #767676;
+    color: $myLightGrey;
 }
 
 .small-box {
@@ -182,7 +184,7 @@ button {
 
     text-transform: capitalize;
 
-    color: #2B2B2B;
+    color: $myGrey;
 }
 
 .small-box-desc {
@@ -197,7 +199,7 @@ button {
     text-transform: capitalize;
     font-feature-settings: 'calt' off, 'kern' off;
 
-    color: #767676;
+    color: $myLightGrey;
 }
 
 .small-box-yellow {
@@ -211,7 +213,7 @@ button {
     text-transform: capitalize;
     font-feature-settings: 'calt' off, 'kern' off;
 
-    color: #FFB400;
+    color: $myYellow;
 }
 
 .experience-box {
@@ -241,7 +243,7 @@ button {
     padding-bottom: 20px;
     text-transform: capitalize;
 
-    color: #2B2B2B;
+    color: $myGrey;
 }
 
 .education-left-p2 {
@@ -257,11 +259,11 @@ button {
     font-feature-settings: 'calt' off, 'kern' off;
 
     float: left;
-    color: #2B2B2B;
+    color: $myGrey;
 }
 
 .education-left-timebox {
-    background-color: #FFB400;
+    background-color: $myYellow;
     border-radius: 1px;
     margin: 0px 0px 0px 0px;
     padding: 0px 10px 0px 10px;
@@ -275,7 +277,7 @@ button {
     font-size: 10px;
     line-height: 100.9%;
 
-    color: #FFFFFF;
+    color: white;
 }
 
 .education-right {
@@ -293,7 +295,7 @@ button {
     text-align: left;
     text-transform: capitalize;
 
-    color: #2B2B2B;
+    color: $myGrey;
 }
 
 .education-right-p2 {
@@ -309,11 +311,11 @@ button {
     font-feature-settings: 'calt' off, 'kern' off;
     float: none;
 
-    color: #767676;
+    color: $myLightGrey;
 }
 
 .gray-line{
-    color: #F0F0F6;
+    color: $greyLineColor;
 }
 ///////////////////////////////////////////////////////////////////////////////////////////////
   @media only screen and (min-width: 768px){ // for tablet
@@ -432,7 +434,7 @@ button {
     
     .education-left-timebox {
         float: left;
-        background-color: #FFB400;
+        background-color: $myYellow;
         border-radius: 1px;
         margin: 0px 30% 0px 30%;
     }
@@ -488,7 +490,7 @@ button {
         font-weight: 700;
         letter-spacing: 0em;
         text-align: left;
-        color: #2B2B2B;
+        color: $myGrey;
     }
     
     #intro-subj-2{
@@ -499,7 +501,7 @@ button {
         font-weight: 700;
         letter-spacing: 0em;
         text-align: left;
-        color: #FFB400;
+        color: $myYellow;
     }
     
     #intro-subj-3{
@@ -510,7 +512,7 @@ button {
         font-weight: 700;
         letter-spacing: 0em;
         text-align: left;
-        color: #2B2B2B;
+        color: $myGrey;
     }
     
     #intro-desc{
@@ -525,7 +527,7 @@ button {
         letter-spacing: 0em;
         text-align: left;
         vertical-align: top;
-        color: #767676;
+        color: $myLightGrey;
         float: left;
     }
 
@@ -567,7 +569,7 @@ button {
     button {
         border: none;
         color: black;
-        background-color: #FFB400;
+        background-color: $myYellow;
         padding: 15px 32px;
         text-align: center;
         text-decoration: none;
@@ -646,7 +648,7 @@ button {
     }
 
     .education-left-timebox {
-        background-color: #FFB400;
+        background-color: $myYellow;
         border-radius: 1px;
         float: right;
         margin: 0px 0% 0px 0%;
@@ -705,7 +707,7 @@ button {
     padding: 30px 0px 15px 0px;
     text-transform: capitalize;
 
-    color: #2B2B2B;
+    color: $myGrey;
   }
   
   .sb-p2 {
@@ -719,7 +721,7 @@ button {
     text-transform: capitalize;
     font-feature-settings: 'calt' off, 'kern' off;
 
-    color: #767676;
+    color: $myLightGrey;
   }
 
   .social-accounts {
@@ -737,7 +739,7 @@ button {
 
   .side-yellow-box {
     float: left;
-    background-color: #FFB400;
+    background-color: $myYellow;
 
     font-family: 'Inter';
     font-style: normal;
@@ -748,7 +750,7 @@ button {
     text-transform: capitalize;
     font-feature-settings: 'calt' off, 'kern' off;
 
-    color: #2B2B2B;
+    color: $myGrey;
   }
 
   .side-info-ans {
@@ -763,7 +765,7 @@ button {
     text-transform: capitalize;
     font-feature-settings: 'calt' off, 'kern' off;
 
-    color: #2B2B2B;
+    color: $myGrey;
   }
 
   .side-subj {
@@ -778,7 +780,7 @@ button {
 
     text-transform: capitalize;
 
-    color: #2B2B2B;
+    color: $myGrey;
   } 
 
   .side-lang-line {
@@ -798,7 +800,7 @@ button {
     text-transform: capitalize;
     font-feature-settings: 'calt' off, 'kern' off;
     
-    color: #767676;
+    color: $myLightGrey;
   }
 
   .lang-right {
@@ -812,7 +814,7 @@ button {
     text-transform: capitalize;
     font-feature-settings: 'calt' off, 'kern' off;
     
-    color: #767676;
+    color: $myLightGrey;
   }
 
   .skills-line {
@@ -837,7 +839,7 @@ button {
     text-transform: capitalize;
     font-feature-settings: 'calt' off, 'kern' off;
 
-    color: #767676;
+    color: $myLightGrey;
   }
 
   .sidebar-end-button {
