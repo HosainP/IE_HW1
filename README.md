@@ -14,3 +14,5 @@ the project contains 5 main parts:
 3. education
 4. work history
 5. side bar
+
+![webpage](https://user-images.githubusercontent.com/47817615/227747963-48462abc-a0d3-4099-bb05-26699e07e133.png)
