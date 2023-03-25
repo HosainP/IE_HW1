@@ -14,7 +14,7 @@ body {
 .intro-box {
   float: left;
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
   margin-left: 10px;
   margin-right: 10px;
   height: auto;
@@ -117,9 +117,76 @@ button {
   letter-spacing: 0em;
 }
 
-#yellow-circle {
-  margin-left: 40px;
-  margin-top: 34.17;
+.part {
+  padding-top: 70px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.part-subj {
+  text-align: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 123.6%;
+  text-transform: capitalize;
+  color: #2B2B2B;
+}
+
+.part-desc {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: capitalize;
+  font-feature-settings: "calt" off, "kern" off;
+  color: #767676;
+}
+
+.small-box {
+  background-image: url("./images/services/Rectangle.png");
+  margin: 10px 10px 10px 10px;
+  padding: 35px 30px 35px 30px;
+  text-align: center;
+}
+
+.small-box-subj {
+  padding-top: 10px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 123.6%;
+  text-transform: capitalize;
+  color: #2B2B2B;
+}
+
+.small-box-desc {
+  padding: 20px 0px 20px 0px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: capitalize;
+  font-feature-settings: "calt" off, "kern" off;
+  color: #767676;
+}
+
+.small-box-yellow {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: capitalize;
+  font-feature-settings: "calt" off, "kern" off;
+  color: #FFB400;
 }
 
 @media only screen and (min-width: 768px) {
@@ -178,9 +245,21 @@ button {
   button {
     letter-spacing: 0em;
   }
-  #yellow-circle {
-    margin-left: 40px;
-    margin-top: 34.17;
+  .part {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+  .services-box {
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+  .small-box {
+    background-image: url("./images/services/Rectangle.png");
+    width: 90%;
+    margin: 10px 10px 10px 10px;
+    padding: 35px 30px 35px 30px;
+    text-align: center;
   }
 }
 @media only screen and (min-width: 1000px) {
@@ -287,5 +366,23 @@ button {
   #yellow-circle {
     margin-left: 40px;
     margin-top: 34.17;
+  }
+  .part {
+    padding-left: 300px;
+    padding-right: 300px;
+  }
+  .services-box {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .small-box {
+    background-image: url("./images/services/Rectangle.png");
+    width: 25%;
+    margin: 10px 10px 10px 10px;
+    padding: 35px 30px 35px 30px;
+    text-align: center;
   }
 }/*# sourceMappingURL=index.css.map */
