@@ -209,6 +209,108 @@ button {
 
     color: #FFB400;
 }
+
+.experience-box {
+
+    float: none;
+    background-image: url("./images/education/Rectangle.png");
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+    margin: 10px 10px 10px 10px;
+    // padding-top: 20px;
+    // padding-bottom: 20px;
+}
+
+.education-left {
+    padding: 0px 30px 0px 30px;
+}
+
+.education-left-p1 {
+    float: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 123.6%;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-transform: capitalize;
+
+    color: #2B2B2B;
+}
+
+.education-left-p2 {
+    float: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+
+    text-transform: capitalize;
+    font-feature-settings: 'calt' off, 'kern' off;
+
+    float: left;
+    color: #2B2B2B;
+}
+
+.education-left-timebox {
+    background-color: #FFB400;
+    border-radius: 1px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 10px 0px 10px;
+    float: right;
+}
+
+.education-left-p3 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 100.9%;
+
+    color: #FFFFFF;
+}
+
+.education-right {
+    padding-top: 30px ;
+}
+
+.education-right-p1 {
+    padding: 0px 30px 0px 30px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 123.6%;
+
+    text-align: left;
+    text-transform: capitalize;
+
+    color: #2B2B2B;
+}
+
+.education-right-p2 {
+    padding: 0px 30px 20px 30px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+
+    text-align: left;
+    text-transform: capitalize;
+    font-feature-settings: 'calt' off, 'kern' off;
+    float: none;
+
+    color: #767676;
+}
+
+.gray-line{
+    color: #F0F0F6;
+}
 ///////////////////////////////////////////////////////////////////////////////////////////////
   @media only screen and (min-width: 768px){ // for tablet
     
@@ -296,12 +398,51 @@ button {
         background-image: url("./images/services/Rectangle.png");
         // height: auto;
         width: 90%;
-        margin: 10px 10px  10px 10px;
+        margin: 20px 20px  20px 20px;
         padding: 35px 30px 35px 30px;
         text-align: center;
     }
     
+    .education-left-p1 {
+        font-size: 24px;
+        padding-bottom: 20px;
+    }
+    
+    .education-left-p2 {
+        font-size: 20px;
+        text-align: left;
+        padding: 0px 30px 0px 0px;
+        float: left;
+    }
+    
+    .education-left-timebox {
+        float: left;
+        background-color: #FFB400;
+        border-radius: 1px;
+        margin: 0px 30% 0px 30%;
+    }
+    
+    .education-left-p3 {
+        padding: 5px 15px 5px 15px;
+    }
+    
+    .education-right {
+        padding-top: 30px ;
+        padding-bottom: 10px;
+    }
+    
+    .education-right-p1 {
+        padding: 20px 30px 20px 30px;
+        font-size: 20px;
+    }
+    
+    .education-right-p2 {
+        font-size: 18px;
+        padding: 0px 30px 20px 30px;
+    }
+    
   }
+
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
   @media only screen and (min-width: 1000px){ // for pc
@@ -447,9 +588,69 @@ button {
     .small-box {
         background-image: url("./images/services/Rectangle.png");
         // height: auto;
-        width: 25%;
-        margin: 10px 10px  10px 10px;
+        width: 27%;
+        margin: 20px 10px  20px 10px;
         padding: 35px 30px 35px 30px;
         text-align: center;
     }
-  }
+  
+
+    .experience-box{
+        float: left;
+        // padding: 30px 30px 30px 30px;
+        margin: 20px 20px 20px 20px;
+    }
+    
+    .ex-left-right {
+        padding: 30px 30px 30px 30px;
+        float: left;
+    }
+
+    .education-left { 
+        padding: 0px 10px 0px 10px;
+        float: left;
+        width: 30%;
+    }
+    .education-left-p1 {
+        font-size: 24px;
+        padding-top: 0px;
+        padding-bottom: 50px;
+        text-align: left;
+    }
+
+    .education-left-p2 {
+        font-size: 20px;
+        text-align: left;
+        float: left;
+        padding: 0px 0px 0px 0px;
+    }
+
+    .education-left-timebox {
+        background-color: #FFB400;
+        border-radius: 1px;
+        float: right;
+        margin: 0px 0% 0px 0%;
+    }
+
+    .education-left-p3 {
+        padding: 5px 15px 5px 15px;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .education-right {
+        width: 60%;
+        padding-top: 0px ;
+        padding-bottom: 10px;
+        float: right;
+    }
+
+    .education-right-p1 {
+        font-size: 24px;
+        padding: 0px 30px 30px 30px;
+    }
+
+    .education-right-p2 {
+        padding: 0px 30px 0px 30px;
+    }
+}
