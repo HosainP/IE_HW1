@@ -14,7 +14,7 @@ body{
 .intro-box{
     float: left;
     margin-top: 10px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     margin-left: 10px;
     margin-right: 10px;
     height: auto;
@@ -316,7 +316,7 @@ button {
     
     .intro-box{
         margin-top: 20px;
-        margin-bottom: 20px;
+        margin-bottom: 100px;
         margin-left: 20px;
         margin-right: 20px;
     }
@@ -396,13 +396,15 @@ button {
 
     .small-box {
         background-image: url("./images/services/Rectangle.png");
-        // height: auto;
-        width: 90%;
         margin: 20px 20px  20px 20px;
         padding: 35px 30px 35px 30px;
         text-align: center;
     }
     
+    .experience-box{
+        margin: 20px 20px 20px 20px;
+    }
+
     .education-left-p1 {
         font-size: 24px;
         padding-bottom: 20px;
@@ -598,7 +600,7 @@ button {
     .experience-box{
         float: left;
         // padding: 30px 30px 30px 30px;
-        margin: 20px 20px 20px 20px;
+        margin: 20px 20px 150px 20px;
     }
     
     .ex-left-right {
