@@ -11,6 +11,10 @@ body{
     width: 100%;
 }
 
+.sidebar{
+    display: none;
+}
+
 .intro-box{
     float: left;
     margin-top: 10px;
@@ -313,6 +317,15 @@ button {
 }
 ///////////////////////////////////////////////////////////////////////////////////////////////
   @media only screen and (min-width: 768px){ // for tablet
+
+    .sidebar{
+        display: block;
+    }
+    
+    .not-sidebar {
+        padding-left: 20%;
+        margin-left: 20px;
+    }
     
     .intro-box{
         margin-top: 20px;
@@ -448,6 +461,11 @@ button {
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
   @media only screen and (min-width: 1000px){ // for pc
+
+    .not-sidebar {
+        padding-left: 20%;
+        margin-left: 20px;
+    }
         
     .intro-box{
         background-image: url("images/intro/intro-background.png");
@@ -590,7 +608,7 @@ button {
     .small-box {
         background-image: url("./images/services/Rectangle.png");
         // height: auto;
-        width: 27%;
+        width: 25%;
         margin: 20px 10px  20px 10px;
         padding: 35px 30px 35px 30px;
         text-align: center;
@@ -656,3 +674,192 @@ button {
         padding: 0px 30px 0px 30px;
     }
 }
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+
+/* The side navigation menu */
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    background-color: white;
+    margin: 20px 20px 20px 20px;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    text-align: center;
+  }
+  
+  .sidebar-pic {
+    padding-top: 50px;
+  }
+
+  .sb-p1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 123.6%;
+
+    padding: 30px 0px 15px 0px;
+    text-transform: capitalize;
+
+    color: #2B2B2B;
+  }
+  
+  .sb-p2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    padding-bottom: 15px;
+
+    text-transform: capitalize;
+    font-feature-settings: 'calt' off, 'kern' off;
+
+    color: #767676;
+  }
+
+  .social-accounts {
+    align-content: stretch;
+  }
+  
+  .side-line {
+     margin: 25px 10% 25px 10%;
+  }
+
+  .side-info-box1 {
+    padding: 10px 10% 10px 10%;
+    display: flow-root;
+  }
+
+  .side-yellow-box {
+    float: left;
+    background-color: #FFB400;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+
+    text-transform: capitalize;
+    font-feature-settings: 'calt' off, 'kern' off;
+
+    color: #2B2B2B;
+  }
+
+  .side-info-ans {
+    float: right;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+
+    text-align: right;
+    text-transform: capitalize;
+    font-feature-settings: 'calt' off, 'kern' off;
+
+    color: #2B2B2B;
+  }
+
+  .side-subj {
+    text-align: left;
+    display: flow-root;
+    padding: 10px 10% 10px 10%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 123.6%;
+
+    text-transform: capitalize;
+
+    color: #2B2B2B;
+  } 
+
+  .side-lang-line {
+    display: flow-root;
+    padding: 10px 10% 10px 10%;
+
+  }
+
+  .lang-left {
+    float: left;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    
+    text-transform: capitalize;
+    font-feature-settings: 'calt' off, 'kern' off;
+    
+    color: #767676;
+  }
+
+  .lang-right {
+    float: right;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    
+    text-transform: capitalize;
+    font-feature-settings: 'calt' off, 'kern' off;
+    
+    color: #767676;
+  }
+
+  .skills-line {
+    display: flex;
+    padding: 10px 10% 10px 10%;
+  }
+
+  .skills-icon {
+    padding-top: 3px;
+    // padding-right: 5px;
+    width: 15px;
+    height: 15px;
+  }
+
+  .skills-p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+
+    text-transform: capitalize;
+    font-feature-settings: 'calt' off, 'kern' off;
+
+    color: #767676;
+  }
+
+  .sidebar-end-button {
+    padding: 0px 10% 0px 10%;
+    width: 80%;
+    height: auto;
+  }
+  /* On screens that are less than 700px wide, make the sidebar into a topbar */
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
